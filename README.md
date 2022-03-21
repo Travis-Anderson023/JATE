@@ -8,7 +8,7 @@ JATE is as it sounds. Just Another Text Editor. JATE allows the user to modify a
 
 ## Screenshot
 A screenshot of JATE
-![screenshot](./readmeAssets/getAllUsersAfterDeleteFriend.png)
+![screenshot](./screenshot.png)
 
 ## Questions
 
