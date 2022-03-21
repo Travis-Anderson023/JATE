@@ -5,8 +5,6 @@ const { GenerateSW } = require('workbox-webpack-plugin');
 const { InjectManifest } = require('workbox-webpack-plugin');
 const path = require('path');
 
-// TODO: Add and configure workbox plugins for a service worker and manifest file.
-// TODO: Add CSS loaders and babel to webpack.
 
 module.exports = () => {
   return {
@@ -24,7 +22,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'BATE List'
+        title: 'JATE List'
       }),
       new MiniCssExtractPlugin(),
       new GenerateSW(),
@@ -33,9 +31,8 @@ module.exports = () => {
         swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
-        // 
         name: 'Best-Alltime-Text-Editor',
-        short_name: 'BATE',
+        short_name: 'JATE',
         description: 'Text-Editor Progressive Web App!',
         display: "fullscreen",
         orientation: "portrait",
