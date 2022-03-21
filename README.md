@@ -3,7 +3,7 @@
 
 ## Landing Page
 
-JATE is as it sounds. Just Another Text Editor. JATE allows the user to modify and write code which a service worker catches and puts in the indexDB. To install JATE simply use the command `npm i` then `npm start` alternatively you can go to the ![Live](https://jate111.herokuapp.com/) version on heroku!
+JATE is as it sounds. Just Another Text Editor. JATE allows the user to modify and write code which a service worker catches and puts in the indexDB. To install JATE simply use the command `npm i` then `npm start` alternatively you can go to the [Live Version](https://jate111.herokuapp.com/) on heroku!
 
 
 ## Screenshot
