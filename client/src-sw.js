@@ -1,10 +1,13 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
-const { CacheFirst } = require('workbox-strategies');
-const { registerRoute } = require('workbox-routing');
-const { CacheableResponsePlugin } = require('workbox-cacheable-response');
-const { ExpirationPlugin } = require('workbox-expiration');
-const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
+import { CacheableResponsePlugin } from 'workbox-cacheable-response';
+// Import the expiration plugin
+import { ExpirationPlugin } from 'workbox-expiration';
+import { precacheAndRoute } from 'workbox-precaching';
+import { warmStrategyCache } from 'workbox-recipes';
+import { registerRoute } from 'workbox-routing';
+import { CacheFirst, StaleWhileRevalidate } from 'workbox-strategies';
 
+
+//pre-cache manifest
 precacheAndRoute(self.__WB_MANIFEST);
 
 const pageCache = new CacheFirst({
