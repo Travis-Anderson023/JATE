@@ -22,7 +22,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'BATE'
+        title: 'JATE'
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -31,7 +31,7 @@ module.exports = () => {
       new WebpackPwaManifest({
         // 
         name: 'Best-Alltime-Text-Editor',
-        short_name: 'BATE',
+        short_name: 'JATE',
         description: 'Text-Editor Progressive Web App!',
         display: "fullscreen",
         orientation: "portrait",
